@@ -20,6 +20,7 @@ namespace Entities.Dtos
         public bool IsOfferable { get; set; }
         public bool IsSold { get; set; }
         public int OwnerId { get; set; }
+        public string Type { get; set; }
         public IFormFile file { get; set; }
 
     }

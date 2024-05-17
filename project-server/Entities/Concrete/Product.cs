@@ -28,5 +28,6 @@ namespace Entities.Concrete
         public Color? Color { get; set; }
         public User? Owner { get; set; }
         public UsingState? UsingState { get; set; }
+        public string Type { get; set; }
     }
 }
