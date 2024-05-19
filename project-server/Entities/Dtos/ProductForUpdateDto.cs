@@ -23,7 +23,6 @@ namespace Entities.Dtos
         public int OwnerId { get; set; }
         public int UserId { get; set; }
         public int OfferId { get; set; }
-        public string Type { get; set; }
 
 
     }

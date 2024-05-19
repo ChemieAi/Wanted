@@ -48,8 +48,7 @@ function AddProduct() {
         usingStateId: "",
         ownerId: getFromLocalStorage("userId"),
         isOfferable: false,
-            isSold: false,
-        type: "product",
+        isSold: false,
       },
       onSubmit: (values, actions) => {
         if (file) {

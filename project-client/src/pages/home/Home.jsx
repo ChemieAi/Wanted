@@ -15,8 +15,6 @@ function Home() {
   useEffect(() => {
     getProducts().then((result) => setProducts(result.data));
   }, []);
-    const listings = products.filter(product => product.type === "product");
-    const demands = products.filter(product => product.type === "demand");
 
   return (
     <div className="px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32">
@@ -33,8 +31,7 @@ function Home() {
             className="btn px-10 text-base rounded-2xl py-3 font-bold mr-6 text-center flex justify-center items-center bg-white text-darkBlue hover:bg-darkBlue hover:text-white transition-all duration-150"
           >
             Ürün Sat
-                  </NavLink>
-
+          </NavLink>
         </div>
       </div>
       <div className="w-11/12 m-auto my-24">
@@ -115,7 +112,7 @@ function Home() {
                 )
             )}
           </div>
-          </div>
+        </div>
       </div>
     </div>
   );

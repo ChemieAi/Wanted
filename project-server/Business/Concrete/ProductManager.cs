@@ -61,8 +61,7 @@ namespace Business.Concrete
                 Description = productForAddDto.Description,
                 IsOfferable = productForAddDto.IsOfferable,
                 IsSold = productForAddDto.IsSold,
-                OwnerId = productForAddDto.OwnerId,
-                Type = productForAddDto.Type
+                OwnerId = productForAddDto.OwnerId
             };
 
             _productDal.Add(productToAdd);
@@ -90,7 +89,6 @@ namespace Business.Concrete
             productToUpdate.IsSold = productForUpdateDto.IsSold;
             productToUpdate.IsOfferable = productForUpdateDto.IsOfferable;
             productToUpdate.Price = productForUpdateDto.Price;
-            productToUpdate.Type = productForUpdateDto.Type;
 
             if (productToUpdate.IsSold)
             {

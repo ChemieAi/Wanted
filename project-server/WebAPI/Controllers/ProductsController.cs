@@ -26,10 +26,6 @@ namespace WebAPI.Controllers
         {
             var productForAddDto = JsonConvert.DeserializeObject<ProductForAddDto>(body);
             productForAddDto.file = file;
-            if (string.IsNullOrEmpty(productForAddDto.Type))
-            {
-                productForAddDto.Type = "product";
-            }
             var result = await _productService.Add(productForAddDto);
             if (result.Success)
             {
